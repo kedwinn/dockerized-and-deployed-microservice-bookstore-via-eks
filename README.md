@@ -1,5 +1,6 @@
 # BookStore Web Application On AWS EKS
-A book store app powered by AWS EKS. Application is designed in microservices fashion running on EKS and integrating with other AWS Services. This project was based on learning from [ACloudGuru](https://acloudguru.com/course/a-practical-guide-to-amazon-eks)
+Used Dockercompose to package different micro-services written in different languages: Front end-Nginx, Backend-Client-API, Resource API, Inventory API, Renting API and each API uses a Dynamtable to store it's data. Setup kube cluster with 3 worker nodes located in 3 private subnets, ensuring the basic network requirements are met: VPC, Subnets, RouteTables, Security Group, NAT Gateway, Control Plane and Worker nodes. Create an ubuntu server 18.04, install maven, aws cli, kubectl and eksctl. Create a cluster with 3 node groups.
+
 
 ## Key Features
 1. AWS Infrastructure (IaC) via Terraform.
